@@ -2,14 +2,19 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <title>Questions</title>
+  <title>Answer</title>
   <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-	<h2>Answer!</h2>
+	<h2><%= answer[0] %></h2>
 	<p class='answer'>
-    <span><%= answer[0] %></span>
-    <span><%= answer[1] %></span><br /><br />
+    <h1><%= answer[1] %></h1><br /><br />
   	</p>
+
+  <form action='/Answer' method='POST'>
+  	<label>Ask another question: </label>
+    <input type='text' name='question'><br /><br />  	
+    <button type='submit'>Ask</button>
+  </form>
 </body>
 </html>

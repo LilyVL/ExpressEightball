@@ -21,7 +21,6 @@ app.get('/Question', (req, res) => {
 
 app.post('/Answer', (req, res) => {
  var question = req.body.question;
- console.log(question);
  var answerList = ["Yes.", "No.", "Maybe...", "Absolutely Not!", "Definitely!", "Ask Again Later."];
  var newAnswer = Math.floor(Math.random() * 6);
 
